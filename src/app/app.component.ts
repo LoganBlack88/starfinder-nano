@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'starfinder-nano';
+
+    sidenavLinks = [
+        {
+            title: 'Equipment',
+            route: '/equipment',
+            children: [
+                {
+                    title: 'Computers',
+                    route: 'equipment/computers'
+                }
+            ]
+        }
+    ];
+
 }
